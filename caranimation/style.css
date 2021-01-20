@@ -1,0 +1,40 @@
+body {
+  background-image: url("./images/sky.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 250px;
+  height: 100vh;
+}
+.road {
+  grid-row: 3/4;
+  grid-column: 1/4;
+  height: 250px;
+  align-self: flex-end;
+}
+.city {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  align-self: flex-end;
+}
+
+.city-image {
+  background-image: url("./images/city.png");
+  grid-row: 2/3;
+  grid-column: 1/4;
+  background-repeat: no-repeat;
+}
+
+.car {
+  width: 400px;
+  position: sticky;
+  top: 80px;
+  left: 20px;
+}

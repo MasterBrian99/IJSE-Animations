@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+@keyframes backgroundchange {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 0;
+  }
+  20% {
+    left: -100%;
+  }
+  30% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  50% {
+    left: -200%;
+  }
+  60% {
+    left: -200%;
+  }
+  70% {
+    left: -100%;
+  }
+  80% {
+    left: -100%;
+  }
+  90% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+div img {
+  float: left;
+  width: 20%;
+}
+
+div {
+  position: relative;
+  width: 500%;
+  animation: backgroundchange 10s infinite;
+  background-size: cover;
+}
+
+/*
+section {
+  background-image: url("https://www.freedigitalphotos.net/images/img/homepage/394230.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  animation: changebackground 5s infinite;
+}
+
+ section {
+  width: 600px;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@keyframes changebackground {
+  0% {
+    transform: translateX(0%);
+    background-image: url("https://www.freedigitalphotos.net/images/img/homepage/394230.jpg");
+  }
+  25% {
+    transform: translateX(100%);
+
+    background-image: url("https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg");
+  }
+  100% {
+    transform: translateX(100%);
+
+    background-image: url("https://photojournal.jpl.nasa.gov/jpeg/PIA23689.jpg");
+  }
+}
+
+/* https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg */
