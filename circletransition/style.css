@@ -50,4 +50,74 @@ section{
       to {
         -webkit-transform: rotate(359deg);
       }
-} */
+}
+
+
+
+*/
+
+  body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #FFFFFF;
+        }
+
+        section {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+
+        section::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            background: #ffffff;
+            border: 14px solid #808080;
+            border-radius: 100%;
+            border-top: 14px solid #DC143C;
+            cursor: pointer;
+        }
+
+        section:hover {
+            transform: rotate(360deg);
+            transition: all 1s;
+        }
+
+        aside {
+            width: 150px;
+            height: 10px;
+            background: #DC143C;
+            position: absolute;
+            transform: rotate(133deg);
+            right: 0;
+            left: 33%;
+            top: 0;
+            bottom: 38%;
+            margin: auto;
+        }
+
+        div {
+            width: 30px;
+            height: 30px;
+            background: #DC143C;
+            border-radius: 100%;
+            bottom: 70%;
+            right: 0;
+            top: 0;
+            left: 63%;
+            margin: auto;
+            position: absolute;
+        }
